@@ -5,17 +5,18 @@
 }
 .newsLetterContainer h2 {
   color: white;
+  text-align: center;
 }
 .form {
   background-color: white;
-  padding: 0.35rem;
+  padding: 0.5rem 1rem;
   border-radius: 3rem;
   gap: 1rem;
 }
 .form input {
   border: none;
   outline: none;
-  /* background-color: red; */
+  background-color: transparent;
   font-size: 0.95rem;
 }
 .form button {
@@ -25,4 +26,42 @@
   color: white;
   border-radius: 1rem;
   padding: 0.25rem 1rem;
+  /* width: 10%; */
+}
+@media (max-width: 500px) {
+  .newsLetterContainer {
+    padding: 1.5rem;
+  }
+  .form {
+    padding: 0.35rem 0.25rem;
+    border-radius: 5rem;
+    width: 75%;
+    justify-content: space-between;
+  }
+  .form input {
+    font-size: 0.8rem;
+    width: 50%;
+  }
+  .form button {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .newsLetterContainer {
+    padding: 1rem;
+  }
+  .form {
+    padding: 0.25rem 0.25rem;
+    /* justify-content: space-around; */
+    gap: 0rem;
+    width: 95%;
+  }
+  .form input {
+    width: 50%;
+    font-size: 0.9rem;
+  }
+  .form button {
+    font-size: 0.9rem;
+  }
 }

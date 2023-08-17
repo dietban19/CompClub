@@ -6,12 +6,24 @@
   z-index: 99;
   color: white;
   gap: 2rem;
+  opacity: 0;
+  animation: fadeInAnimation 1.5s ease-in-out forwards;
 }
 @keyframes slideIn {
   from {
     transform: translateY(-100%);
   }
   to {
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
     transform: translateY(0);
   }
 }
@@ -27,6 +39,7 @@
 }
 .hero-left button {
   margin-top: 1rem;
+  width: 50%;
   /* z-index: 999; */
 }
 @media (max-width: 768px) {

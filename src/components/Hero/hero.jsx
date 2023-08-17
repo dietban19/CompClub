@@ -13,7 +13,7 @@ const hero = () => {
         <div className="hero-wrapper">
           <div className="paddings innerWidth gridTwo heroContainer">
             {/* Hero Left */}
-            <div className="flexColStart hero-left">
+            <div className="flexColCenter hero-left">
               <h1>Coding Minds Unite</h1>
               <h3 className="secondaryText">
                 Join the Computer Engineering Revolution
