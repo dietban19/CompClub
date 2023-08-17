@@ -56,7 +56,7 @@ const AboutUs = () => {
         <div className="auContainer">
           <h2>About Us</h2>
           <p>
-            Welcome to our club of passionate software engineers! We are a
+            Welcome to ours club of passionate software engineers! We are a
             close-knit team dedicated to pushing the boundaries of software
             development through projects, challenges, and continuous learning.
           </p>
