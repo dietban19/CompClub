@@ -9,10 +9,20 @@
   flex-direction: row;
   gap: 5rem;
 }
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 .hero-right img {
+  z-index: 1;
   border: 5px solid var(--clr-neutral-600);
   max-width: 25rem;
   border-radius: 1rem 4rem 1rem 0rem;
+  /* animation: slideIn 0.5s linear infinite; */
 }
 .hero-left {
   gap: 0.5rem;

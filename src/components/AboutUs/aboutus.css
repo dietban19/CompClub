@@ -1,0 +1,52 @@
+.aboutUsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.imageContainer {
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.auContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
+  /* Set a fixed width for each grid box */
+  width: 100%; /* You can adjust this value to your preference */
+  padding: 1rem;
+  /* outline: 1px solid black; */
+}
+.auContainer.animate,
+.imageContainer.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+    /* height: -100px; */
+  }
+}

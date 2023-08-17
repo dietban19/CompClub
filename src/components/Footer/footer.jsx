@@ -9,64 +9,24 @@ const footer = () => {
           <div className="logo">LOGO</div>
           <div className="flexStart nav">
             <div className="navContainer">
-              <Link
-                to="residencies"
-                spy={true}
-                smooth={true}
-                offset={20}
-                duration={500}
-              >
-                About Us
-              </Link>
+              <Link to="residencies">About Us</Link>
             </div>
             <div className="navContainer">
               {" "}
-              <Link
-                to="values"
-                spy={true}
-                smooth={true}
-                offset={20}
-                duration={500}
-              >
-                Events
-              </Link>
+              <Link to="values">Events</Link>
             </div>
             <div className="navContainer">
               {" "}
-              <Link
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={20}
-                duration={500}
-              >
-                Blog
-              </Link>
+              <Link to="contact">Blog</Link>
             </div>
             <div className="navContainer">
               {" "}
-              <Link
-                to="getstart"
-                spy={true}
-                smooth={true}
-                offset={20}
-                duration={500}
-              >
-                Contact Us
-              </Link>
+              <Link to="getstart">Contact Us</Link>
             </div>
             <div className="navContainer">
               {" "}
               <button className="button">
-                <Link
-                  to="contact"
-                  spy={true}
-                  smooth={true}
-                  offset={20}
-                  duration={500}
-                >
-                  Join Now
-                </Link>
+                <Link to="contact">Join Now</Link>
               </button>
             </div>
           </div>

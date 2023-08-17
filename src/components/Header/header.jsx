@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 // import Logo from "../../../public/logo.png";
 import "./header.css";
+import HeroImage from "../../../public/images/HeroImage.jpg";
 import { BiMenuAltRight } from "react-icons/bi";
 import { MdClose } from "react-icons/md";
 import { Link } from "react-scroll";
@@ -59,64 +60,24 @@ const Header = () => {
         >
           <div className="navElement">
             {" "}
-            <Link
-              to="residencies"
-              spy={true}
-              smooth={true}
-              offset={20}
-              duration={500}
-            >
-              About Us
-            </Link>
+            <Link to="residencies">About Us</Link>
           </div>
           <div className="navElement">
             {" "}
-            <Link
-              to="values"
-              spy={true}
-              smooth={true}
-              offset={20}
-              duration={500}
-            >
-              Events
-            </Link>
+            <Link to="values">Events</Link>
           </div>
           <div className="navElement">
             {" "}
-            <Link
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={20}
-              duration={500}
-            >
-              Blog
-            </Link>
+            <Link to="contact">Blog</Link>
           </div>
           <div className="navElement">
             {" "}
-            <Link
-              to="getstart"
-              spy={true}
-              smooth={true}
-              offset={20}
-              duration={500}
-            >
-              Contact Us
-            </Link>
+            <Link to="getstart">Contact Us</Link>
           </div>
           <div className="navElement">
             {" "}
             <button className="button">
-              <Link
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={20}
-                duration={500}
-              >
-                Join Now
-              </Link>
+              <Link to="contact">Join Now</Link>
             </button>
           </div>
         </div>
