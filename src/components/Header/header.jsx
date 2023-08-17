@@ -4,7 +4,7 @@ import "./header.css";
 
 import { BiMenuAltRight } from "react-icons/bi";
 import { MdClose } from "react-icons/md";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   // Set the initial state of the open based on screen width
@@ -77,7 +77,7 @@ const Header = () => {
           <div className="navElement">
             {" "}
             <button className="button">
-              <Link to="contact">Join Now</Link>
+              <Link to="/signup">Sign Up</Link>
             </button>
           </div>
         </div>
