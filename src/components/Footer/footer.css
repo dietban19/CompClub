@@ -1,5 +1,6 @@
 .f-wrapper {
-  background-color: rgb(27, 14, 102);
+  padding: 1rem;
+  background-color: var(--clr-primary-900);
 }
 .f-wrapper .f-container {
   justify-content: space-between;
@@ -28,4 +29,23 @@
 .navContainer a {
   text-decoration: none;
   color: white;
+}
+@media (max-width: 768px) {
+  .f-wrapper .f-container {
+    flex-direction: column;
+  }
+  .footerLeft .logo {
+    margin-bottom: 1rem;
+  }
+  .footerLeft {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 3rem;
+  }
+  .nav {
+    flex-direction: column;
+  }
+}
+.copyright {
+  color: rgb(133, 133, 133);
 }

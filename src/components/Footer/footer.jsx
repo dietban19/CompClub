@@ -36,6 +36,7 @@ const footer = () => {
           <img src="./images/facebook-logo.png" alt="" />
         </div>
       </div>
+      <span className="flexCenter copyright">Copyright @ 2023 Team </span>
     </div>
   );
 };
