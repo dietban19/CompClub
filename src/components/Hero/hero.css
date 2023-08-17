@@ -1,0 +1,36 @@
+.hero-wrapper {
+  position: relative;
+  z-index: 99;
+}
+.hero-wrapper .heroContainer {
+  z-index: 99;
+  color: white;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 5rem;
+}
+.hero-right img {
+  border: 5px solid var(--clr-neutral-600);
+  max-width: 25rem;
+  border-radius: 1rem 4rem 1rem 0rem;
+}
+.hero-left {
+  gap: 0.5rem;
+}
+.hero-left button {
+  margin-top: 1rem;
+  /* z-index: 999; */
+}
+@media (max-width: 768px) {
+  .hero-wrapper .heroContainer {
+    z-index: 99;
+    flex-direction: column;
+    /* background-color: red; */
+  }
+  .hero-left {
+    text-align: center;
+  }
+  .hero-right img {
+    max-width: 100%;
+  }
+}

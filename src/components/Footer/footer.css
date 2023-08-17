@@ -1,0 +1,31 @@
+.f-wrapper {
+  background-color: rgb(27, 14, 102);
+}
+.f-wrapper .f-container {
+  justify-content: space-between;
+  background-color: var(--clr-primary-900);
+  padding: 3rem;
+  width: 100%;
+}
+.footerLeft {
+  gap: 2rem;
+}
+.footerRight {
+  display: flex;
+  gap: 1.25rem;
+}
+.footerRight img {
+  max-width: 2rem;
+  color: white;
+}
+.nav {
+  gap: 1rem;
+}
+
+.logo {
+  color: white;
+}
+.navContainer a {
+  text-decoration: none;
+  color: white;
+}
