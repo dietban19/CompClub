@@ -1,0 +1,36 @@
+.numbersContainer {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 6rem;
+}
+.numbersRight {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.numbersRight.animateSection,
+.numbersLeft.animateSection {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.numbersRight span {
+  font-size: 1.5rem;
+}
+
+.numbersLeft img {
+  width: 100%;
+  /* height: 25rem; */
+}
+@media (max-width: 898px) {
+  .numbersWrapper .numbersContainer {
+    gap: 1rem;
+  }
+  .numbersRight .statsContent {
+    display: grid;
+    place-items: center;
+  }
+}

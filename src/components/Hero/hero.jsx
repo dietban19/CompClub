@@ -1,6 +1,6 @@
 import React from "react";
 import "./hero.css";
-import HeroImage from "../../../public/images/HeroImage.jpg";
+import HeroImage from "../../assets/images/HeroImage.jpg";
 const hero = () => {
   const HeroImages =
     "https://res.cloudinary.com/dx0n3s9h4/image/upload/v1692278014/compEng_mejwqg.jpg";
@@ -11,7 +11,7 @@ const hero = () => {
     <>
       {HeroImages && (
         <div className="hero-wrapper">
-          <div className="paddings innerWidth flexColCenter heroContainer">
+          <div className="paddings innerWidth gridTwo heroContainer">
             {/* Hero Left */}
             <div className="flexColStart hero-left">
               <h1>Coding Minds Unite</h1>

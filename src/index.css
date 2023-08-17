@@ -3,7 +3,12 @@
 
   --secondary: rgba(255, 255, 255, 0.78);
   --ff-primary: "Poppins", sans-serif;
+  --clr-primary-500: hsl(161, 68%, 38%);
+  --clr-primary-501: hsl(303, 31%, 57%);
+  --clr-primary-502: hsl(202, 66%, 39%);
+  --clr-primary-600: hsl(230, 68%, 12%);
   --clr-primary-700: hsl(19, 89%, 67%);
+
   --clr-primary-800: hsl(230, 41%, 14%);
   --clr-primary-900: hsl(244, 41%, 8%);
   --clr-neutral-400: hsl(0, 0%, 93%);
@@ -190,4 +195,28 @@ button:hover {
   z-index: 999;
   cursor: pointer;
   transform: scale(1.1);
+}
+.leftAnimation {
+  opacity: 0;
+  transform: translateX(-20%);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.rightAnimation {
+  opacity: 0;
+  transform: translateX(20%);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.sideAnimation {
+}
+
+.gridTwo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+}
+@media (max-width: 898px) {
+  .gridTwo {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
 }

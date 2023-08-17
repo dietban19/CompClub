@@ -37,7 +37,7 @@
 .h-container .closed {
   z-index: -1;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .h-container {
     z-index: 99;
   }
@@ -82,7 +82,6 @@
     top: 5rem;
     /* height: 100%; */
     flex-direction: column;
-    background-color: blue;
     z-index: -1;
     /* animation: open 0.5s ease-in-out; */
   }

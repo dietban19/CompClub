@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 // import Logo from "../../../public/logo.png";
 import "./header.css";
-import HeroImage from "../../../public/images/HeroImage.jpg";
+
 import { BiMenuAltRight } from "react-icons/bi";
 import { MdClose } from "react-icons/md";
 import { Link } from "react-scroll";
@@ -21,8 +21,8 @@ const Header = () => {
     };
     const handleResize = () => {
       // Always open the menu when screen width is greater than 768 pixels
-      setOpen(window.innerWidth > 1024);
-      setNavOpen(window.innerWidth > 1024);
+      setOpen(window.innerWidth > 768);
+      setNavOpen(window.innerWidth > 768);
     };
 
     window.addEventListener("scroll", handleScroll);
