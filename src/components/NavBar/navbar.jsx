@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 // import Logo from "../../../public/logo.png";
-import "./header.css";
+import "./navbar.css";
 
 import { BiMenuAltRight } from "react-icons/bi";
 import { MdClose } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const navbar = () => {
   // Set the initial state of the open based on screen width
   const [open, setOpen] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
@@ -49,12 +49,11 @@ const Header = () => {
     console.log("NEW", navOpen);
   }, [navOpen]);
   return (
-    <section className="h-wrapper">
-      <div className="flexCenter innerWidth paddings h-container">
+    <section className="navbar-wrapper">
+      <div className="flexCenter innerWidth paddings navbar-container">
         <Link to="/">
           <img src="./images/facebook-logo.png" alt="logo" width={100} />
         </Link>
-
         {/* <div className="test">TEST</div> */}
         <div
           className={`flexCenter h-menu ${open ? "open" : "closed"} ${
@@ -99,4 +98,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default navbar;
