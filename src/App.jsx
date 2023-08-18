@@ -54,8 +54,8 @@ function App() {
             }
           />
           {/* <Route path="/home" element={<Home />} /> */}
-          <AboutUs path="/about" element={<AboutUs />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/about" element={<AboutUs />} />
         </Routes>
         {!shouldHideNavbarAndFooter && <Footer />}
       </>
