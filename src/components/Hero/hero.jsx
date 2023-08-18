@@ -40,7 +40,6 @@ const hero = () => {
             {/* Hero Left */}
             <div className="flexColCenter hero-left">
               <div className="typewriter">
-                {" "}
                 <Typewriter
                   words={slogans}
                   loop={true}
