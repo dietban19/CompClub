@@ -6,7 +6,7 @@ import Navbar from "./components/Header/header";
 import Footer from "./components/Footer/footer";
 import Signup from "./pages/Signup/Signup";
 import Login from "./pages/Login/Login";
-import Profile from "./pages/Profile/Profile";
+import Profile from "./pages/Profile/profile";
 import Nav from "./components/NavBar/navbar";
 import { Container } from "react-bootstrap";
 import { AuthProvider } from "./context/AuthContext.jsx";
