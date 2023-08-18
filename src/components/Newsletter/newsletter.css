@@ -30,7 +30,7 @@
 }
 @media (max-width: 500px) {
   .newsLetterContainer {
-    padding: 1.5rem;
+    padding: 3rem;
   }
   .form {
     padding: 0.35rem 0.25rem;
@@ -49,7 +49,7 @@
 
 @media (max-width: 420px) {
   .newsLetterContainer {
-    padding: 1rem;
+    padding: 4rem;
   }
   .form {
     padding: 0.25rem 0.25rem;

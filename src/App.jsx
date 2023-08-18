@@ -8,8 +8,10 @@ import Signup from "./pages/Signup/Signup";
 import Login from "./pages/Login/Login";
 import Profile from "./pages/Profile/profile";
 import Nav from "./components/NavBar/navbar";
+import AboutUs from "./pages/AboutUs/aboutUs";
 import { Container } from "react-bootstrap";
 import { AuthProvider } from "./context/AuthContext.jsx";
+
 function App() {
   const location = useLocation();
 
@@ -52,6 +54,7 @@ function App() {
             }
           />
           {/* <Route path="/home" element={<Home />} /> */}
+          <AboutUs path="/about" element={<AboutUs />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>
         {!shouldHideNavbarAndFooter && <Footer />}
