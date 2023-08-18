@@ -21,14 +21,16 @@ const hero = () => {
     console.log(`Done after 5 loops!`);
   };
   const slogans = [
-    "Coding the Future, Line by Line.",
     "Sculpting the Digital Landscape.",
-    "Creating Code, Crafting Change.",
-    "Inspiring Minds, Igniting Code.",
     "Building Tomorrow's Tech, Today.",
     "Engineering Dreams through Code.",
-    "Crafting Software, Engineering Excellence.",
     "Transforming Lines into Solutions.",
+    "Lines to Solutions.",
+    "Innovate. Code. Repeat.",
+    "Tech, Transformed.",
+    "Unleash Innovation.",
+    "Coding Tomorrow Today.",
+    "Dream, Code, Create.",
   ];
   return (
     <>
@@ -37,7 +39,7 @@ const hero = () => {
           <div className="paddings innerWidth gridTwo heroContainer">
             {/* Hero Left */}
             <div className="flexColCenter hero-left">
-              <h1>
+              <div className="typewriter">
                 {" "}
                 <Typewriter
                   words={slogans}
@@ -51,7 +53,7 @@ const hero = () => {
                   onLoopDone={handleDone}
                   onType={handleType}
                 />
-              </h1>
+              </div>
               <h3 className="secondaryText">
                 Join the Computer Engineering Revolution
               </h3>
