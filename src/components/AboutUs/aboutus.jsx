@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-
+import { Link } from "react-router-dom";
 import aboutUs1Image from "../../assets/images/aboutus-1.jpg";
 import aboutUs2Image from "../../assets/images/aboutus2.jpg";
 import aboutUs3Image from "../../assets/images/aboutus-3.jpg";
@@ -57,7 +57,6 @@ const AboutUs = () => {
       <section className="aboutUsWrapper">
         <div className="aboutUsContainer">
           <div className="aboutUsRow">
-            {" "}
             <div className="auContainer">
               <h2>About Us</h2>
               <p>
@@ -66,7 +65,10 @@ const AboutUs = () => {
                 development through projects, challenges, and continuous
                 learning.
               </p>
-              <button className="button">About Us</button>
+
+              <button className="button">
+                <Link to="/about">About Us</Link>
+              </button>
             </div>
             <div className="imageContainer">
               <img
@@ -89,7 +91,9 @@ const AboutUs = () => {
                 create innovative solutions, share knowledge, and grow their
                 expertise.
               </p>
-              <button className="button">Events</button>
+              <button className="button">
+                <Link to="/events">Events</Link>
+              </button>
             </div>
           </div>
           <div className="aboutUsRow">
@@ -101,7 +105,9 @@ const AboutUs = () => {
                 in workshops and discussions to stay updated with the latest
                 trends in the tech industry.
               </p>
-              <button className="button">Our Projects</button>
+              <button className="button">
+                <Link to="/projects">Our Projects</Link>
+              </button>
             </div>
             <div className="imageContainer">
               <img src={aboutUs2Image} alt="two men with hard hats thumbs up" />
@@ -120,7 +126,9 @@ const AboutUs = () => {
                 professional network that will benefit you throughout your
                 career.
               </p>
-              <button className="button">Join Now</button>
+              <button className="button">
+                <Link to="/register">Join Now</Link>
+              </button>
             </div>
           </div>
           <div className="aboutUsRow">
@@ -132,7 +140,9 @@ const AboutUs = () => {
                 our events, and dive into the world of limitless possibilities
                 in software development.
               </p>
-              <button className="button">Contact Us</button>
+              <button className="button">
+                <Link to="/contacts">Contact Us</Link>
+              </button>
             </div>
             <div className="imageContainer">
               <img

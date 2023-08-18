@@ -1,15 +1,13 @@
 .h-wrapper {
-  /* padding: 0rem 10rem; */
   z-index: 9999;
   position: sticky;
   top: 0;
-  /* background-color: red; */
 }
 
 .h-menuMobile {
-  display: none; /* Hide the element completely */
-  visibility: hidden; /* Hide the element even though it's not displayed */
-  opacity: 0; /* Make the element transparent */
+  display: none;
+  visibility: hidden;
+  opacity: 0;
 }
 .h-wrapper .h-container {
   position: relative;
@@ -54,43 +52,57 @@
   }
   .test {
     position: absolute;
-    background-color: green;
+
     width: 10rem;
     height: 10rem;
   }
   .h-container .fullClose {
-    visibility: hidden;
-    height: -100px;
+    /* visibility: hidden; */
+    /* height: -100px; */
   }
   .h-container .closed {
-    /* display: none;
+    animation: slideUp 0.3s ease-in;
     opacity: 0;
-    visibility: hidden; */
-
-    animation: slideUp 0.3s ease-in-out;
-    opacity: 0;
-    /* visibility: hidden; */
-    /* display: none; */
     z-index: -100;
-    /* animation: slideOut 0.3s ease-in-out !important; */
   }
-  .h-menu {
-    /* display: none; */
+  .h-menu .closed {
+    animation: slideUp 0.3s ease-in;
+  }
+  .h-container .h-menu {
     background-color: var(--clr-neutral-400);
     padding: 1rem;
     color: black;
     position: absolute;
     right: 0%;
     width: 100%;
-    top: 5rem;
-    /* height: 100%; */
+    top: 8rem;
     flex-direction: column;
-    z-index: -1;
-    /* animation: open 0.5s ease-in-out; */
+    gap: 0;
+  }
+  .h-menu .navElement {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .h-menu .navElement a {
+    height: 100%;
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: center;
+    width: 100%;
+    /* background-color: red; */
+    padding: 1rem;
+    border-bottom: 1px solid rgba(167, 167, 167, 0.464);
   }
   .open {
     z-index: -1;
     animation: slideIn 0.3s ease-in-out;
+  }
+  .navElement button {
+    margin-top: 1.5rem;
+  }
+  .navElement button a {
+    color: white;
   }
 }
 
