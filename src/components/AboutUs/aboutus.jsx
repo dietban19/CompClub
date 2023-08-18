@@ -66,6 +66,7 @@ const AboutUs = () => {
                 development through projects, challenges, and continuous
                 learning.
               </p>
+              <button className="button">About Us</button>
             </div>
             <div className="imageContainer">
               <img

@@ -37,6 +37,10 @@
 .hero-left {
   gap: 0.5rem;
 }
+.hero-left h1 {
+  font-weight: 700;
+  font-size: 4rem;
+}
 .hero-left button {
   margin-top: 1rem;
   width: 50%;
